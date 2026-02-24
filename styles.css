@@ -1,0 +1,43 @@
+/* 
+
+Colors:
+Dark blue: #1F4E79
+Forest Green – #2E7D32
+Mountain Grey – #6D6E70
+Pinky Yeloow - #F4A261
+Light Blue – #E0FBFC
+
+
+
+*/
+
+body {
+    margin: 0;
+    color: #E0FBFC;
+}
+
+#main-section {
+    margin: 30px 0;
+    width: 100%;
+    height: 500px;
+    /* background */
+    background-image: url('./images/main.jpeg');
+    background-size: cover;
+    /* text centered */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title {
+    text-shadow: 0px 0px 4px #F4A261;
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.main-h3 {
+    text-shadow: 0px 0px 100px black;
+    margin-top: 0;  
+}
