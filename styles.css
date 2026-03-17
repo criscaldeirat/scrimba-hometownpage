@@ -7,17 +7,89 @@ Mountain Grey – #6D6E70
 Pinky Yeloow - #F4A261
 Light Blue – #E0FBFC
 
-
-
 */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     color: #E0FBFC;
 }
 
+/* NAV BAR */
+#nav-bar {
+    width: 100%;
+    max-width: 100vw;
+    height: 64px;
+    background: linear-gradient(to right, #E0FBFC 30%, #1F4E79 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+@media (max-width: 600px) {
+    #nav-bar {
+        height: auto;
+        padding: 10px 16px;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    #nav-bar > div:last-child {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-link {
+        padding: 10px 12px;
+        font-size: 1rem;
+    }
+}
+
+.nav-link {
+    color: #E0FBFC;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.div-nav-img {
+    height: 100%;
+}
+
+#nav-img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 4px;
+}
+
+#nav-bar .nav-link:hover,
+#nav-bar .nav-link:focus {
+    background-color: #1F4E79; /* Pinky Yellow */
+    color: #E0FBFC;
+}
+
+
+/* MAIN SECTION */
+
 #main-section {
-    margin: 30px 0;
+    margin: 0 0;
     width: 100%;
     height: 500px;
     /* background */

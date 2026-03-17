@@ -12,6 +12,8 @@ I hope you enjoy this little apresentation from where I live :)
 
 ## TO-DO LIST
 
+[] Make the website responsive to all devices
+
 #### Navigation bar
 [] Design
 
