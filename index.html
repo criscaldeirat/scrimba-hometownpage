@@ -42,19 +42,36 @@
     </section>
     <section id="gastronomy-section">
         <h2>Gastronomy</h2>
-        <div class="gastronomy-grid">
-            <article class="gastronomy-card">
-                <h3>Madeira Wine</h3>
-                <p>The island is famous for its fortified wine, which can age for decades and is still enjoyed worldwide.</p>
-            </article>
-            <article class="gastronomy-card">
-                <h3>Bolo do Caco</h3>
-                <p>A traditional Madeiran flatbread usually served warm with garlic butter.</p>
-            </article>
-            <article class="gastronomy-card">
-                <h3>Espetada</h3>
-                <p>Skewered beef rubbed with bay leaves and grilled over wood, a local BBQ favorite.</p>
-            </article>
+        <div class="gastronomy-carousel" aria-label="Gastronomy highlights">
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous">
+                ‹
+            </button>
+            <div class="carousel-track" aria-label="Gastronomy items">
+                <article class="carousel-card" data-position="left">
+                    <img class="carousel-img" src="./images/gastronomy/madeira-wine.jpeg" alt="Madeira wine glass">
+                    <div class="carousel-info">
+                        <h3>Madeira Wine</h3>
+                        <p>The island is famous for its fortified wine, which can age for decades and is still enjoyed worldwide.</p>
+                    </div>
+                </article>
+                <article class="carousel-card" data-position="center">
+                    <img class="carousel-img" src="./images/gastronomy/bolo-do-caco.jpg" alt="Bolo do caco flatbread">
+                    <div class="carousel-info">
+                        <h3>Bolo do Caco</h3>
+                        <p>A traditional Madeiran flatbread usually served warm with garlic butter.</p>
+                    </div>
+                </article>
+                <article class="carousel-card" data-position="right">
+                    <img class="carousel-img" src="./images/gastronomy/espetada.jpg" alt="Espetada skewers on grill">
+                    <div class="carousel-info">
+                        <h3>Espetada</h3>
+                        <p>Skewered beef rubbed with bay leaves and grilled over wood, a local BBQ favorite.</p>
+                    </div>
+                </article>
+            </div>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next">
+                ›
+            </button>
         </div>
     </section>
     <section id="curiosity-section">
@@ -80,5 +97,7 @@
             Check out the <a href="https://github.com/criscaldeirat/scrimba-hometownpage">Source Code</a>
         </p>
     </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

@@ -187,7 +187,7 @@ body {
     line-height: 1.5;
 }
 
-/* CULINARY SECTION */
+/* GASTRONOMY SECTION */
 
 #gastronomy-section {
     padding: 60px 20px;
@@ -201,29 +201,105 @@ body {
     margin-bottom: 36px;
 }
 
-.gastronomy-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
+.gastronomy-carousel {
+    position: relative;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.gastronomy-card {
+.carousel-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.carousel-card {
+    flex: 0 0 40%;
+    max-width: 420px;
+    min-width: 300px;
     background: rgba(224, 251, 252, 0.85);
     border: 1px solid rgba(244, 162, 97, 0.3);
     border-radius: 12px;
-    padding: 24px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+    opacity: 0.55;
+    transform: scale(0.8);
+    z-index: 0;
 }
 
-.gastronomy-card h3 {
+.carousel-card[data-position="center"] {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+
+.carousel-card[data-position="left"],
+.carousel-card[data-position="right"] {
+    filter: blur(0.5px);
+}
+
+.carousel-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-info {
+    padding: 24px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: 1px solid rgba(31, 78, 121, 0.35);
+    background: rgba(224, 251, 252, 0.9);
+    color: #1F4E79;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, background 0.2s ease;
+    z-index: 10;
+}
+
+.carousel-arrow:hover,
+.carousel-arrow:focus {
+    background: rgba(224, 251, 252, 1);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.carousel-prev {
+    left: 12px;
+}
+
+.carousel-next {
+    right: 12px;
+}
+
+.carousel-info {
+    padding: 24px;
+}
+
+.carousel-info h3 {
     margin-top: 0;
     margin-bottom: 12px;
     color: #2E7D32;
 }
 
-.gastronomy-card p {
+.carousel-info p {
     margin: 0;
     line-height: 1.5;
 }
