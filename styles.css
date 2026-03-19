@@ -396,5 +396,30 @@ body {
     line-height: 1.4;
 }
 
+footer {
+    padding: 32px 20px;
+    background: rgba(31, 78, 121, 0.12);
+    color: #1F4E79;
+    text-align: center;
+    border-top: 1px solid rgba(31, 78, 121, 0.25);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+footer a {
+    color: #2E7D32;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+}
+
 
 
